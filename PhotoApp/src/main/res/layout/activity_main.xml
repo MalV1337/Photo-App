@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/targetimage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editHashtag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/loadimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/colorPrimary"
+        android:text="add"
+        android:textColor="#FFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/applyBtn"
+        app:layout_constraintEnd_toStartOf="@+id/applyBtn"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/showAllPicBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorPrimary"
+        android:text="show all"
+        android:textColor="#FFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/applyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/applyBtn" />
+
+    <EditText
+        android:id="@+id/editHashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Enter your hashtags"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/showAllPicBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/targetimage" />
+
+    <Button
+        android:id="@+id/applyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:background="@color/colorPrimary"
+        android:text="Apply"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/showAllPicBtn"
+        app:layout_constraintStart_toEndOf="@+id/loadimage" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Photo App by Malke</string>
+    <string name="title_activity_show_all_pictures">Gallery View</string>
+</resources>

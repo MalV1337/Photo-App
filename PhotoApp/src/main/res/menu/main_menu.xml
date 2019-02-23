@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <item
+        android:id="@+id/takingPic"
+        android:icon="@android:drawable/ic_menu_camera"
+        app:showAsAction="always"
+        android:title=""></item>
+
+    <item
+        android:id="@+id/deleteAllPic"
+        app:showAsAction="never"
+        android:title="Clear all Pictures">
+    </item>
+
+    <item
+        android:id="@+id/clearConf"
+        app:showAsAction="never"
+        android:title="Clear Settings">
+    </item>
+
+    <item
+        android:id="@+id/saveConf"
+        app:showAsAction="never"
+        android:title="Save State">
+    </item>
+
+    <item
+        android:id="@+id/credit"
+        app:showAsAction="never"
+        android:title="Credits">
+    </item>
+
+    <item
+        android:id="@+id/exitApp"
+        app:showAsAction="never"
+        android:title="Exit App">
+    </item>
+</menu>
